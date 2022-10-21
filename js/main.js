@@ -1,6 +1,11 @@
 // Scrivere un programma che chieda all’utente:
 
 const btnGenerator = document.querySelector(".btn-generator");
+const generatorNameElement = document.querySelector(".name-surname");
+const generatorOfferElement = document.querySelector(".offer");
+const generatorCarriageElement = document.querySelector(".carriage");
+const generatorCpElement = document.querySelector(".cp-code");
+const generatorPriceElement = document.querySelector(".price");
 
 
 btnGenerator.addEventListener('click', function() {
@@ -34,12 +39,19 @@ btnGenerator.addEventListener('click', function() {
         message = "Biglietto standard";
         
     }
-    
-
-
-        
     console.log(`${price.toFixed(2)}€`);
     console.log(message);
-        
-        
+
+    // aggiungiamo variabili per calcolare la carrozza e il codice CP
+
+    const carriageRandom = Math.floor(Math.random() * 10) + 1;
+    const cpRandom = Math.floor(Math.random() * 9999) + 90000;
+
+    // generiamo i dati ricavati all'interno dell'HTML, sulla sezione ticket
+    
+    generatorNameElement.innerHTML = nameSurname;
+    generatorOfferElement.innerHTML = message;
+    generatorCarriageElement.innerHTML = carriageRandom;
+    generatorCpElement.innerHTML = cpRandom;
+    generatorPriceElement.innerHTML = (`${price.toFixed(2)}€`);       
 });
