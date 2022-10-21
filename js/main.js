@@ -31,7 +31,7 @@ btnGenerator.addEventListener('click', function() {
         
     } else {
         price = distance * 0.21;
-        message = "Biglietto standard"
+        message = "Biglietto standard";
         
     }
     
