@@ -61,7 +61,7 @@ input,select {
 }
 
 .ticket-hidden {
-    display: none;
+    /* display: none; */
 
 }
 
@@ -71,7 +71,7 @@ input,select {
 
 .col-small {
     background-color: grey;
-    padding: 1.25rem;
+    padding: .625rem 1.25rem;
     width: 25%;
 }
 
@@ -82,8 +82,30 @@ input,select {
 .col-big {
     justify-content: space-evenly;
     padding-top: .625rem;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+
 }
 
 .my.ticket {
     display: block;
+}
+
+h2 {
+    margin: 1.25rem 0;
+}
+
+h6 {
+    font-size: 1.125rem;
+}
+
+span {
+    font-size: 1.25rem;
+    padding-top: 1.25rem;
+    display: block;
+}
+
+h1,h2,h3,h4,h6 {
+    font-weight: bold;
+
 }
