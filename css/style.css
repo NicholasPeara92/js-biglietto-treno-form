@@ -52,3 +52,29 @@ input,select {
     padding: .3125rem;
     border-radius: .3125rem;
 }
+
+.ticket {
+    background-color: white;
+    color: black;
+    text-align: left;
+    padding: 1.875rem;
+}
+
+.ticket > .row {
+    justify-content: space-between;
+}
+
+.col-small {
+    background-color: grey;
+    padding: 1.25rem;
+    width: 25%;
+}
+
+.col-big {
+    width: 75%;
+}
+
+.col-big {
+    justify-content: space-evenly;
+    padding-top: .625rem;
+}
