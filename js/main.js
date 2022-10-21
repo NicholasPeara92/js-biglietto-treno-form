@@ -7,7 +7,6 @@ const generatorCarriageElement = document.querySelector(".carriage");
 const generatorCpElement = document.querySelector(".cp-code");
 const generatorPriceElement = document.querySelector(".price");
 
-
 btnGenerator.addEventListener('click', function() {
     // - il nome e cognome dell'utente
     let nameSurname = document.getElementById("name").value;
@@ -41,9 +40,10 @@ btnGenerator.addEventListener('click', function() {
     }
     console.log(`${price.toFixed(2)}€`);
     console.log(message);
-
+    
+    const ticketElement = document.querySelector(".ticket");
     // aggiungiamo variabili per calcolare la carrozza e il codice CP
-
+    
     const carriageRandom = Math.floor(Math.random() * 10) + 1;
     const cpRandom = Math.floor(Math.random() * 9999) + 90000;
 
@@ -53,5 +53,9 @@ btnGenerator.addEventListener('click', function() {
     generatorOfferElement.innerHTML = message;
     generatorCarriageElement.innerHTML = carriageRandom;
     generatorCpElement.innerHTML = cpRandom;
-    generatorPriceElement.innerHTML = (`${price.toFixed(2)}€`);       
+    generatorPriceElement.innerHTML = (`${price.toFixed(2)}€`);   
+    
+    // generiamo il biglietto dell' utente 
+
+    ticketElement.classList.replace("ticket-hidden", "my-ticket");
 });

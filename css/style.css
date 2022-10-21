@@ -60,6 +60,11 @@ input,select {
     padding: 1.875rem;
 }
 
+.ticket-hidden {
+    display: none;
+
+}
+
 .ticket > .row {
     justify-content: space-between;
 }
@@ -77,4 +82,8 @@ input,select {
 .col-big {
     justify-content: space-evenly;
     padding-top: .625rem;
+}
+
+.my.ticket {
+    display: block;
 }
