@@ -61,7 +61,7 @@ input,select {
 }
 
 .ticket-hidden {
-    /* display: none; */
+    display: none;
 
 }
 
