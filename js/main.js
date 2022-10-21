@@ -29,15 +29,17 @@ btnGenerator.addEventListener('click', function() {
         price -= price * 0.4;
         message = "Biglietto over 65";
         
-    } else ( age === "maggiorenne") 
+    } else ( age === "maggiorenne") {
         price = distance * 0.21;
         message = "Biglietto standard"
+        
+    }
     
 
 
-    console.log(`${price.toFixed(2)}€`);
-    console.log(message);
-
-
-
+        
+        
+        
 });
+console.log(`${price.toFixed(2)}€`);
+console.log(message);
